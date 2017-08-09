@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+        <color name="md_black_1000">#000000</color>
+        <color name="md_light_green_900">#33691E</color>
+        <color name="md_amber_A700">#FFAB00</color>
+        <color name="md_pink_A700">#C51162</color>
+        <color name="md_brown_800">#4E342E</color>
+
+
+</resources>
