@@ -19,16 +19,22 @@ public class DetailsActivity extends AppCompatActivity {
         setContentView(R.layout.details_activity);
 
         String[] array = getIntent().getStringArrayExtra("array");
+        int pos = getIntent().getIntExtra("pos", 0);
+        Model model = MainActivity.arrayList.get(pos);
 
         RelativeLayout rl = (RelativeLayout) findViewById(R.id.layout);
-        rl.setBackgroundColor(Color.parseColor(array[3]));
+//        rl.setBackgroundColor(Color.parseColor(array[3]));
+        rl.setBackgroundColor(model.getColor());
 
         TextView textView = (TextView) findViewById(R.id.heading);
-        textView.setText(array[0]);
+//        textView.setText(array[0]);
+        textView.setText(model.getHeader());
         TextView type = (TextView) findViewById(R.id.language);
-        type.setText(array[1]);
+//        type.setText(array[1]);
+        type.setText(model.getSub());
         TextView desc = (TextView) findViewById(R.id.desc);
-        desc.setText(array[2]);
+//        desc.setText(array[2]);
+        desc.setText(model.getDesc());
 
     }
 
